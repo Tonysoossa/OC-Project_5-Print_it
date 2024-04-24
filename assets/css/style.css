@@ -134,8 +134,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
-}
+/* body {
+} */
 section {
   margin-block: 6em;
 }
@@ -194,18 +194,22 @@ header {
   min-height: 470px;
   position: relative;
 }
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 470px;
+}
+
 .banner-img {
-  /* position: absolute; */
-  /* z-index: -1; */
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: none;
-	overflow: hidden;
 }
 
-img.displaySlide {
+.slides .displaySlide {
   display: block;
 }
 
@@ -230,10 +234,9 @@ img.displaySlide {
 /* Gestion des points du carrousel */
 .dots {
   position: absolute;
-  bottom: 80px;
+  bottom: 30px;
   display: flex;
 }
-
 .dot {
   margin-inline: 5px;
   width: 13px;
@@ -247,15 +250,14 @@ img.displaySlide {
 .dot_selected {
   background-color: #fff;
 }
-
 /* Fin du code CSS pour le carousel */
 #banner p {
   position: absolute;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 900;
   font-size: 50px;
-  line-height: 58px;
-	padding-top: 7px;
+  line-height: 66px;
+  padding-top: 14px;
   color: white;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
